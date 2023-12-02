@@ -1,0 +1,31 @@
+Olá pessoal do grupo progeto_energy !!!🚀
+
+Espero ter adicionado cada menbro do grupo para tornar sejam bem vindos ao nosso repositório onde vamos trabalhar bastante!!🤯
+ 
+ ⚠️Então se vc está pedido sem saber o que fazer siga os passos que deixei ai abaixo... 
+Clonar repositório: 
+1. Na pagina do seu find do GitHub em top repositories na lupa pesquise pelo repositório que quer clonar seu caso esse 👉'progeto_energy'.
+
+2. Após acessar o repositório (clique no botão <>code #verde) e copie na opção HTTPS o link do repositório ou pode ir direto 'url' do  seu navegador e copiar visto que você já esta na pagina do repositório. 
+
+3. Agora abra seu "GitBash Terminal" já na pasta que você quer colocar seu clone do repositório digite:
+{git clone https://endereço_do_repositório}
+
+4. Com novo repositório clonado só e acessado via git GitBash Terminal... Crie uma nova branch só digitar:
+{git branch nome_da_branch}
+
+5. Acesse essa nova branch sua só digitar:
+{git checkout nome_da_branch }
+Não esqueça fazer uma alteração como ecrever uma frase nesse aquivo.. depois da alteração só digitar:
+{git add.}
+{git commit -m "comentario...."}
+{git push origin nome_da_branch }
+Só isso....
+
+
+
+
+
+
+
+
