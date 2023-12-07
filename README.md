@@ -4,6 +4,8 @@
 <a href="https://github.com/caioaquino29/projeto_energy/assets/115197086/c68391dc-98a7-4d0f-aa4a-5fd9cb4fa8d1
 ">Click preview</a>
 
+<a href="https://github.com/caioaquino29/projeto_energy/assets/115197086/fa9db6bd-7225-424b-a8ac-2b2e0d19cec7">Click updated preview </a>
+
 ### Menbros do grupo do repo projeto_energy
 1. Rianderson Santos 
 2. Martinson Freitas
