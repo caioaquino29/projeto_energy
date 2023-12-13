@@ -13,12 +13,9 @@
 <a href="https://github.com/caioaquino29/projeto_energy/assets/115197086/6602b68d-3fbf-4320-9e52-564bd6283dc2">Click 2Quiz </a>
 
 <a href="https://github.com/caioaquino29/projeto_energy/assets/115197086/9bb40c3d-bded-4352-ab99-0abf5af886cf">Click cadastro </a>
-
+## Previa do site:
++ <a href="https://caioaquino29.github.io/projeto_energy/progeto_energy-home/index.html"
 
 ### Menbros do grupo do repo projeto_energy
-1. Rianderson Santos 
-2. Martinson Freitas
-3. Andre Wendel
-4. Stephane ❓
-5. Caio Aquino
+1. Caio Aquino
    
