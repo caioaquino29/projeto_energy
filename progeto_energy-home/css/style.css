@@ -336,6 +336,15 @@ body{
 
     grid-row: 20% 1fr 10%;
 }
+
+@media (max-width:732px) {
+    #container{ display: flex;
+        flex-direction: column;
+
+
+    }
+    
+}
 /* Quiz........ */
 #container-quiz,#container-cadastrar{
     display: flex;
@@ -348,27 +357,11 @@ body{
 
 /* parte responsiva do corpo da pagina main.... */
 
-@media(max-width:1000px){
-    .container-aside{
-        font-size: .8rem;
-    }
-    .container-nav> div > a > img{
-        width: 100px;
-    }
-    
-  
-   
-    .container-nav >div{
-        font-size: .8rem;
-        width: 200px;
-        height: 200px;
-        margin-bottom: 50px;
-    }
 
-    
-  
-    
-}
+
+
+
+
 @media (max-width:732px) {
     #container{ display: flex;
         flex-direction: column;
@@ -377,16 +370,6 @@ body{
     }
     
 }
-
-
-@media(min-width:1000px ){
-    .container-nav{
-     height: 90vh;
-    }
-     
- }
-
-
 
 /* estilição unitaria ou especifica para cada pagina   */
 
@@ -606,6 +589,8 @@ i{
    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.313) ;
 
 }
+
+/* botão do site  */
 .btn-save:hover{
     transition: .4s;
     color: white;
@@ -658,7 +643,7 @@ i{
     background-color: green;
 
 }
-
+/* fim botão....... */
 
 
 
@@ -677,6 +662,13 @@ strong, em{
 .container-aside{
     margin-top: 100px;
 
+}
+
+@media (max-width:1000px) {
+    .container-aside{
+        font-size: .8rem;
+    }
+    
 }
 .container-aside-quiz-div, .container-aside-quiz-div-seg, .container-aside-cadastro {
     max-width: 282px;
@@ -730,11 +722,10 @@ strong, em{
     padding: 10px ;
     grid-column: 1/5;
     display: flex;
-    
     justify-content: space-around;
     flex-wrap: wrap ;
-   
     width: 90vw;
+    height: 70vh;
     margin: 50px auto;
     background-color: #05a9f576;
     border-radius: 20px;
@@ -744,6 +735,40 @@ strong, em{
     
    
 
+}
+@media(max-width:1000px){
+   
+    .container-nav> div > a > img{
+     width: 100px;
+    }
+    .container-nav > div p{
+
+        font-size: 0.7rem;
+    }
+    .container-nav{
+        height: 90vh;
+    }
+    
+  
+   
+    .container-nav >div{
+        font-size: .8rem;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    
+  
+    
+}
+@media (max-width:512px) {
+    .container-nav{
+       margin: 10px auto  ;
+       height: 1200px ;
+    }
+
+    
 }
 
 .container-nav > div{
