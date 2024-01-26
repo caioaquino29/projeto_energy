@@ -1,59 +1,102 @@
-e70p7<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energia Renovavel.com </title>
+    <title>Energia Renovavel.com </title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- link font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,900;1,300&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icons.... -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <img src="../img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
-        <h2>
-            Energia Renovave.com
-        </h2>
-        <ul type="none">
-            <li>Menu</li>
-            <li>Cadastro</li>
-            <li>Quiz</li>
-            <li>Mapa</li>
-            <li><button>Login</button> <img src="../img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <div>
-                <img src="../img/logo.png" alt="logo um raio meio de um circulo">
-                <h3>Questão 1 Power-Renew</h3>
-                <p>
-                    As fontes de energia podem ser classificadas, conforme a sua origem, em renováveis e não renováveis. As fontes renováveis de energia têm como principal característica a:
-                </p>
-            </div>
-        </section>
-        <section> 
-            <di>
-                <ol type="A">
-                   <li><button onclick="alert('Você errou tente novamente !!!!!!')" >Necessidade de baixos investimentos financeiros para produção elétrica.</button></li><br>
-                   <li><button onclick="alert('Você errou tente novamente !!!!!!')">Utilização de elementos ambientais finitos para a produção energética.</button></li><br>  
-                   <li><button onclick="alert('Você errou tente novamente !!!!!!')">Dependência da utilização de combustíveis fósseis para a sua produção.</button></li> <br>
-                   <li><button onclick="alert('Você errou tente novamente !!!!!!')">Missão de poluentes atmosféricos causadores do aquecimento global.</button></li> <br> 
-                   <li><button onclick="alert('Acertou parabéns!!!!!!')">Utilização de recursos naturais que possuem capacidade de regeneração</button></li> 
+    <!-- menu de navegação e interação -->
+   <nav class="menu-navegar">
+    
+    <div class="menu-navegar-div">
+      <img class="menu-navegar-img" src="../img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
+      <h2 class="menu-navegar-titulo">
+          Energia <br> Renovave.com
+      </h2>
+      <ul class="menu-navegar-lista " type="none">
+          <li>Menu</li>
+          <li>Cadastro</li>
+          <li>Quiz</li>
+          <li>Mapa</li>
+          <li class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> <img src="../img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
+      </ul>
+      <!-- menu huburguer fica escondido quando screen tamanho adequado para tela de computador já quando diminue o tamanho ele aparece e menu-nagar-lisata desaparece   -->
+      <span class="menu-secreto">
+          <button><i class="fa fa-bars"></i></button>
+          <span class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> </span>
+          
+      </span>
+    </div>
+  </nav>
+  <!-- parte do menu da pagina  quiz  -->
+  <div class="menu-quiz">
+    <div class="menu-quiz-box3">
+        <img class="img1" src="../img/logo.png" alt="logo um raio meio de um circulo">
+        <p class="para-quiz"> 
+          <strong class="str-quiz" >Questão <spa class="interação">1</spa> Power-Renew: </strong><br>
+          As fontes de energia podem ser classificadas, conforme a sua origem, em renováveis e não renováveis. As fontes renováveis de energia têm como principal característica a:
+        </p>
+    </div>
+   </div>
+    <main id="container-quiz">
+        <section class="container-section-quiz2"> 
+            <di class="container-div-quiz2" >
+                <ol class="lista-odernada-quiz" type="A">
+                   <li>
+                     <button onclick="alert('Você errou tente novamente !!!!!!')" >Necessidade de baixos investimentos financeiros para produção elétrica.</button>
+                  </li><br><br>
+                  <li>
+                     <button onclick="alert('Você errou tente novamente !!!!!!')">Utilização de elementos ambientais finitos para a produção energética.</button>
+                  </li><br><br>  
+                  <li>
+                     <button onclick="alert('Você errou tente novamente !!!!!!')">Dependência da utilização de combustíveis fósseis para a sua produção.</button>
+                  </li> <br><br>
+                  <li>
+                     <button onclick="alert('Você errou tente novamente !!!!!!')">Missão de poluentes atmosféricos causadores do aquecimento global.</button>
+                  </li> <br><br> 
+                  <li>
+                    <button onclick="alert('Acertou parabéns!!!!!!')">Utilização de recursos naturais que possuem capacidade de regeneração</button>
+                </li> 
                 </ol>
 
             </div>
         </section>
-        <section>
-            <button onclick="window.open('./index.html')">Sair</button>
-            <button>Voltar</button>
-            <button>Continuar</button>
-        </section>
+        <div class="container-div-quiz">
+            <button class="btn-quiz-sair" onclick="window.open('./index.html')">Sair <i class="fa fa-sign-out"></i></button>
+            <button class="btn-quiz-voltar" ><i class="fa fa-arrow-left"></i> Voltar</button>
+            <button class="btn-quiz-entrar" >Respoder </button>
+        </div>
     </main>
     
-    <footer>
-        <h3>Acesse  nossa  redes sociais :</h3>
-        <ul>
-            <li>Fecebook</li>
-            <li>Instagra</li>
-            <li>LikedIn</li>
+     <!-- rodapé da pagina com rede sociais principais  -->
+     <footer id="final">
+        <h3 class="final-titulo">Acesse  nossa  redes sociais :</h3>
+        <ul class="final-lista">
+            <li>Facebook  <img class="social" src="img/Social Icons (Community)/face.png" alt=""></li>
+            
+            <li>Instagra <img class="social" src="img/Social Icons (Community)/instagram.png" alt=""></li>
+            
+            <li>LinkedIn <img class="social" src="img/Social Icons (Community)/linkedIn.png" alt=""></li>
+            
+            <li>YouTube <img class="social" src="img/Social Icons (Community)/youtube.png" alt=""></li>
+            
+            <li>X (twitter) <img class="social" src="img/Social Icons (Community)/x.png" alt=""></li>
         </ul>
     </footer>
     

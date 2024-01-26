@@ -4,28 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energia Renovavel.com </title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,900;1,300&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icons.... -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
+    <!-- menu de navegação e interação -->
     <nav class="menu-navegar">
-        <img class="menu-navegar-img" src="./img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
-        <h2 class="menu-navegar-titulo">
-            Energia Renovave.com
-        </h2>
-        <ul class="menu-navegar-lista" type="none">
-            <li>Menu</li>
-            <li>Cadastro</li>
-            <li>Quiz</li>
-            <li>Mapa</li>
-            <li><button class="menu-navegar-lista-btn">Login</button> <img src="./img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
-        </ul>
+        <div class="menu-navegar-div">
+            <img class="menu-navegar-img" src="./img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
+            <h2 class="menu-navegar-titulo">
+                Energia <br> Renovave.com
+            </h2>
+            <ul class="menu-navegar-lista " type="none">
+                <li>Menu</li>
+                <li>Cadastro</li>
+                <li>Quiz</li>
+                <li>Mapa</li>
+                <li class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> <img src="./img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
+            </ul>
+            <!-- menu huburguer fica escondido quando screen tamanho adequado para tela de computador já quando diminue o tamanho ele aparece e menu-nagar-lisata desaparece   -->
+            <span class="menu-secreto">
+                <button><i class="fa fa-bars"></i></button>
+                <span class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> </span>
+                
+            </span>
+        </div>
     </nav>
+    <!-- conteúdo principal  meu main..... -->
     <main id="container">
-        <div class="container-div" >
+        <div class="container-div5" >
             <h1 id="titulo" >
                 Um inesperado efeito colateral da seca: mais emissões de carbono</h1>
             <p class="container-para">
                 A estiagem prejudica árvores, pessoas e animais — e também o orçamento de carbono.</p>
-            <img class="container-img" src="./img/01_drought_carbon_gettyimages-453835176.webp" alt="heliotérmico quase seca sem água">
+            
             <span class="container-para-span">
                 <small>Os níveis hídricos retrocederam às mínimas históricas nos lagos e reservatórios da Califórnia em 2014. Na Barragem Folsom, na Califórnia, os níveis recuaram a aproximadamente 40 por cento da capacidade total.</small>
             </span>
@@ -46,12 +71,23 @@
                 
                 Não é o ideal, mas faz sentido, afirma Amir AghaKouchak, engenheiro civil e ambiental da Universidade da Califórnia, em Irvine.
             </p>
-            <img class="container-img" src="./img/chamine.webp" alt="Chamine saindo muita fumaça...">1
-            <span class="container-span">
-                <small>01 | MUDANÇAS CLIMÁTICAS
-                Conheça as causas e o impacto do aquecimento global e das mudanças do clima em nosso planeta.
-                </small>
-            </span>
+            <div class="box-img-page2">
+                <picture>
+
+                    <source media="(max-width:400px )" srcset="./img/chamine-pq.jpg" >
+
+                    <source media="(max-width: 790px )" srcset="./img/chamine-md.jpg" >
+                    
+                    
+                    <img class="img-page2" src="./img/chamine.webp" alt="Chamine saindo muita fumaça...">
+                </picture>
+                <span class="container-span">
+                    <br>
+                    <small>01 | MUDANÇAS CLIMÁTICAS
+                    Conheça as causas e o impacto do aquecimento global e das mudanças do clima em nosso planeta.
+                    </small>
+                </span>
+            </div>
             <p class="container-para">
                 “Sob condições de estiagem, a prioridade é destinar a água às pessoas e às cidades e os dirigentes acabam optando pela queima de gás para geração de energia”, conta ele. “Porque existem alternativas para obter energia de outras fontes—mas não existem alternativas para obter água”.
             </p>
@@ -76,6 +112,7 @@
         
        
         </section>
+        <!-- Assuntos  corelacionado com materia principal informação lateral..... -->
         <aside class="container-aside">
     
             <div class="container-aside-quiz-div">
@@ -103,6 +140,7 @@
                 </p>
             </div>
         </aside>
+        <!-- Barra no meio pagina para dá acesso outros assuntos do site  -->
         <section class="container-nav">
             <div class="container-nav-p1">
                <a class="container-nav-p1-link" href="./index.html">  
@@ -144,9 +182,15 @@
     <footer id="final">
         <h3 class="final-titulo">Acesse  nossa  redes sociais :</h3>
         <ul class="final-lista">
-            <li>Fecebook</li>
-            <li>Instagra</li>
-            <li>LikedIn</li>
+            <li>Facebook  <img class="social" src="img/Social Icons (Community)/face.png" alt=""></li>
+            
+            <li>Instagra <img class="social" src="img/Social Icons (Community)/instagram.png" alt=""></li>
+            
+            <li>LinkedIn <img class="social" src="img/Social Icons (Community)/linkedIn.png" alt=""></li>
+            
+            <li>YouTube <img class="social" src="img/Social Icons (Community)/youtube.png" alt=""></li>
+            
+            <li>X (twitter) <img class="social" src="img/Social Icons (Community)/x.png" alt=""></li>
         </ul>
     </footer>
     

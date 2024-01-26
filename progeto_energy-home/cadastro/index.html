@@ -4,90 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energia Renovavel.com </title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- link font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,900;1,300&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icons.... -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <img src="../img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
-        <h2>
-            Energia Renovave.com
-        </h2>
-        <ul type="none">
-            <li>Menu</li>
-            <li>Cadastro</li>
-            <li>Quiz</li>
-            <li>Mapa</li>
-            <li><button>Login</button> <img src="../img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
-        </ul>
-        <div>
-            <img src="../img/solar.png" alt="">
-            <h1>Cadastre-se</h1>
+    <nav class="menu-navegar">
+        <div class="menu-navegar-div">
+            <img class="menu-navegar-img" src="../img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
+            <h2 class="menu-navegar-titulo">
+                Energia <br> Renovave.com
+            </h2>
+            <ul class="menu-navegar-lista " type="none">
+                <li>Menu</li>
+                <li>Cadastro</li>
+                <li>Quiz</li>
+                <li>Mapa</li>
+                <li class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> <img src="../img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
+            </ul>
+            <!-- menu huburguer fica escondido quando screen tamanho adequado para tela de computador já quando diminue o tamanho ele aparece e menu-nagar-lisata desaparece   -->
+            <span class="menu-secreto">
+                <button><i class="fa fa-bars"></i></button>
+                 <span class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> </span> 
+            </span>
         </div>
     </nav>
-    <main>
-        <section>
-            <div>
+    <!-- conteúdo principal  meu main..... -->
+    <div  class="menu-cadastrar">
+            
+            <h1>Cadastre-se</h1>
+    </div>
+    <main id="container-cadastrar">
+        <section class="container-section-cadastrar">
+            <div class="form-part1">
                 <form action="" method="get" autocomplete="on">
                     <div>
                         <label for="nome">Nome Completo</label>
-                        <input type="text" name="nome">
+                        <input class="input-nome" type="text" name="nome">
                     </div>
+                    <br>
                     <div>
                         <label for="number">CPF ou CNPJ</label>
-                        <input type="number" >
+                        <input class="input-cpf" type="number" >
                         <label for="date">Data de Nascimento</label>
-                        <input type="date">
+                        <input class="input-data"  type="date">
+                        <br>
+                        <br>
                         <label for="phone">Telefone</label>
-                        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        <input class="input-tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        <br>
+                        <br>
                     </div>
 
                 </form>
                 
             </div>
-            <div>
-                <h3>Endereço:</h2>
+            <div class="form-part2">
+                <h3>Endereço:</h2><br>
                 <div>
-                    <form action="">
-
+                    <form>
                         <div>
                             <label for="text">Logradouro:</label>
-                            <input type="text" >
+                            <input class="input-endereco" type="text" >
+                            <br>
+                            <br>
                         </div>
                         <div>
                             <label for="number">Número</label>
-                            <input type="number" >
+                            <input class="input-numero" type="number" >
                             <label for="text">Complemento</label>
-                            <input type="text" >
-                            <label for="text">UF</label>
-                                <input type="text" title="Unidade da federação ou Estado que pertence">
+                            <input class="input-complemento" type="text" > <br><br>
+                            <label name="uf" id="uf" class="input-uf" for="text">UF</label>
+                           
+                            <select name="uf" id="uf">
+                                <option value="">Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
                         </div>
                         
                     </form>
 
                 </div>
+                <br>
+                <br>
+            </div>    
+            <div class="form-part3">
+                <h3>Login</h3>
                 <div>
-                    <h3>Login</h3>
-                    <div>
-                        <form action="">
-                            <label for="email">E-mail:</label>
-                            <input type="email" required>
-                            <label for="password">Senha:</label>
-                            <input type="password">
-                    
+                    <form action="">
+                        <label for="email">E-mail:</label>
+                        <input class="input-email" type="email" required>
+                        <br>
+                        <br>
+                        <label for="password">Senha:</label>
+                        <input class="input-senha" type="password">
                     </form>
-                    </div>
+                    <br>
+                    <br>
                 </div>
-                <button>Save</button>
             </div>
+            <button class="btn-save">Save <i class="fa fa-save"></i></button>
         </section>
-      <button onclick="window.open('../index.html')"><img src="../img/Vector.png" alt="seta indicado para esquerda voltar">Voltar</button>
+        <div class="cadastrar-div" >
+            <button class="btn-quiz-voltar" onclick="window.open('../index.html')"><i class="fa fa-arrow-left"></i>Voltar </button>
+        </div>
     </main>
     
-    <footer>
-        <h3>Acesse  nossa  redes sociais :</h3>
-        <ul>
-            <li>Fecebook</li>
-            <li>Instagra</li>
-            <li>LikedIn</li>
+    <!-- rodapé da pagina com rede sociais principais  -->
+    <footer id="final">
+        <h3 class="final-titulo">Acesse  nossa  redes sociais :</h3>
+        <ul class="final-lista">
+            <li>Facebook  <img class="social" src="../img/Social Icons (Community)/face.png" alt=""></li>
+            
+            <li>Instagra <img class="social" src="../img/Social Icons (Community)/instagram.png" alt=""></li>
+            
+            <li>LinkedIn <img class="social" src="../img/Social Icons (Community)/linkedIn.png" alt=""></li>
+            
+            <li>YouTube <img class="social" src="../img/Social Icons (Community)/youtube.png" alt=""></li>
+            
+            <li>X (twitter) <img class="social" src="../img/Social Icons (Community)/x.png" alt=""></li>
         </ul>
     </footer>
     

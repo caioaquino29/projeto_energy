@@ -4,102 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energia Renovavel.com </title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,900;1,300&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icons.... -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- menu de navegação e interação -->
     <nav class="menu-navegar">
-        <img class="menu-navegar-img" src="./img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
-        <h2 class="menu-navegar-titulo">
-            Energia Renovave.com
-        </h2>
-        <ul class="menu-navegar-lista " type="none">
-            <li>Menu</li>
-            <li>Cadastro</li>
-            <li>Quiz</li>
-            <li>Mapa</li>
-            <li><button class="menu-navegar-lista-btn">Login</button> <img src="./img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
-        </ul>
+      <div class="menu-navegar-div">   
+         <img class="menu-navegar-img" src="./img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
+         <h2 class="menu-navegar-titulo">
+             Energia Renovave.com
+         </h2>
+         <ul class="menu-navegar-lista " type="none">
+             <li>Menu</li>
+             <li>Cadastro</li>
+             <li>Quiz</li>
+             <li>Mapa</li>
+             <li><button class="menu-navegar-lista-btn">Login</button> <img src="./img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
+         </ul>
+         <!-- menu huburguer fica escondido quando screen tamanho adequado para tela de computador já quando diminue o tamanho ele aparece e menu-nagar-lisata desaparece   -->
+         <span class="menu-secreto">
+             <button><i class="fa fa-bars"></i></button>
+             <span class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> </span>
+         </span>
+      </div>
     </nav>
+     <!-- conteúdo principal  meu main..... -->
     <main id="container">
-        <div class="container-div">
-            <h1 id="titulo"  >Energia limpa: o que significa o novo avanço científico na fusão nuclear?</h1>
-            <img class="container-img" src="./img/2012-038104-lg.webp" alt="tecnico eletrecista em meio varios paineis solares ">
+        <div class="container-div2">
+            <h1 id="titulo"  >
+                Energia limpa: o que significa o novo avanço científico na fusão nuclear?
 
-
+            </h1>
         </div>
+        <!-- minha sectio de texto e imagens  -->
         <section class="container-section">
-            <p class="container-para">Um laboratório dos EUA provocou com sucesso uma reação de fusão que liberou mais energia do que foi aplicada inicialmente para alimentar o processo. Mas ainda há um longo caminho a percorrer em direção à fusão como fonte de energia limpa.
-            POR MICHAEL GRESHKO
-            O recorde de fusão foi alcançado na Instalação Nacional de Ignição do Laboratório Nacional Lawrence Livermore, ...
-            O recorde de fusão foi alcançado na Instalação Nacional de Ignição do Laboratório Nacional Lawrence Livermore, na Califórnia, EUA. No laboratório, o combustível de fusão é inflamado com um conjunto de 192 lasers. Esses lasers atingem altas energias graças, em parte, a dispositivos chamados pré-amplificadores (vistos aqui).
+            <h2 class="container-titulo">
+                Uma série de lasers na Instalação Nacional de Ignição (NIF, na sigla em inglês)
+            </h2>
+            <p class="container-para">
+                Um laboratório dos EUA provocou com sucesso uma reação de fusão que liberou mais energia do que foi aplicada inicialmente para alimentar o processo. Mas ainda há um longo caminho a percorrer em direção à fusão como fonte de energia limpa.
+                POR MICHAEL GRESHKO
+                O recorde de fusão foi alcançado na Instalação Nacional de Ignição do Laboratório Nacional Lawrence Livermore, ...
+                O recorde de fusão foi alcançado na Instalação Nacional de Ignição do Laboratório Nacional Lawrence Livermore, na Califórnia, EUA. No laboratório, o combustível de fusão é inflamado com um conjunto de 192 lasers. Esses lasers atingem altas energias graças, em parte, a dispositivos chamados pré-amplificadores (vistos aqui).
                         
-            FOTO DE DAMIEN JEMISON LAWRENCE LIVERMORE NATIONAL LABRATORY (272988)
-            Por mais de 60 anos, os cientistas perseguiram um dos desafios físicos mais difíceis já concebidos: aproveitar a fusão nuclear, fonte de energia das estrelas, para gerar abundante energia limpa aqui na Terra. Nesta semana, os pesquisadores anunciaram uma marca histórica neste esforço. Pela primeira vez, um reator de fusão produziu mais energia do que foi usada para desencadear a reação.
+                FOTO DE DAMIEN JEMISON LAWRENCE LIVERMORE NATIONAL LABRATORY (272988)
+                Por mais de 60 anos, os cientistas perseguiram um dos desafios físicos mais difíceis já concebidos: aproveitar a fusão nuclear, fonte de energia das estrelas, para gerar abundante energia limpa aqui na Terra. Nesta semana, os pesquisadores anunciaram uma marca histórica neste esforço. Pela primeira vez, um reator de fusão produziu mais energia do que foi usada para desencadear a reação.
                         
-            Em 5 de dezembro, uma série de lasers na Instalação Nacional de Ignição (NIF, na sigla em inglês), parte do Laboratório Nacional Lawrence Livermore, na Califórnia (EUA), disparou 2,05 megajoules de energia em um minúsculo cilindro contendo uma pastilha de deutério e trítio congelados, formas mais pesadas de hidrogênio. A pastilha comprimiu e gerou temperaturas e pressões intensas o suficiente para causar a fusão do hidrogênio. Em uma pequena chama que durou menos de um bilionésimo de segundo, os núcleos atômicos em fusão liberaram 3,15 megajoules de energia – cerca de 50% a mais do que havia sido usado para aquecer a pastilha.
+                Em 5 de dezembro, uma série de lasers na Instalação Nacional de Ignição (NIF, na sigla em inglês), parte do Laboratório Nacional Lawrence Livermore, na Califórnia (EUA), disparou 2,05 megajoules de energia em um minúsculo cilindro contendo uma pastilha de deutério e trítio congelados, formas mais pesadas de hidrogênio. A pastilha comprimiu e gerou temperaturas e pressões intensas o suficiente para causar a fusão do hidrogênio. Em uma pequena chama que durou menos de um bilionésimo de segundo, os núcleos atômicos em fusão liberaram 3,15 megajoules de energia – cerca de 50% a mais do que havia sido usado para aquecer a pastilha.
                         
-            Embora a conflagração tenha terminado rapidamente, seu significado perdurará. Há muito tempo que pesquisadores da fusão procuram obter ganho líquido de energia, o que é chamado de equilíbrio científico. “Simplificando, este é um dos acontecimentos científicos mais impressionantes do século 21”, declarou a secretária de Energia dos EUA, Jennifer Granholm, em um comunicado de imprensa em Washington, DC.
+                Embora a conflagração tenha terminado rapidamente, seu significado perdurará. Há muito tempo que pesquisadores da fusão procuram obter ganho líquido de energia, o que é chamado de equilíbrio científico. “Simplificando, este é um dos acontecimentos científicos mais impressionantes do século 21”, declarou a secretária de Energia dos EUA, Jennifer Granholm, em um comunicado de imprensa em Washington, DC.
                         
-            Ao atingir o ponto de equilíbrio científico, o NIF mostrou que pode atingir a “ignição”: um estado da matéria que pode facilmente sustentar uma reação de fusão. Ser capaz de estudar as condições de ignição em detalhes será “um divisor de águas para todo o campo da fusão termonuclear”, diz Johan Frenje, físico de plasma do MIT cujo laboratório contribuiu para bater os recordes do NIF.</p>
-                <div>
-                     <img class="container-img" src="./img/nif-1209-18059.webp" alt="Simulação mostra um alvo da NIF dentro de uma cápsula">
-                     <span class="container-img-para">Simulação mostra um alvo da NIF dentro de uma cápsula com raios de laser que entram pelas aberturas em cada extremidade. Os feixes comprimem e aquecem o alvo nas condições necessárias para que ocorra a fusão nuclear.</span>
+                Ao atingir o ponto de equilíbrio científico, o NIF mostrou que pode atingir a “ignição”: um estado da matéria que pode facilmente sustentar uma reação de fusão. Ser capaz de estudar as condições de ignição em detalhes será “um divisor de águas para todo o campo da fusão termonuclear”, diz Johan Frenje, físico de plasma do MIT cujo laboratório contribuiu para bater os recordes do NIF.
+            </p>
+            <div class="box-img-page2">   
+                    
+                <picture> 
+                    <source media="(max-width:790px )" srcset="img/nif-1209-18059-pq.jpg">
+                    <img class="img-page2" src="img/nif-1209-18059.webp" alt="Simulação mostra um alvo da NIF dentro de uma cápsula com raios de laser">
+                </picture> <br>   
+                <span class="container-img-para">
+                    <small>Simulação mostra um alvo da NIF dentro de uma cápsula com raios de laser que entram pelas aberturas em cada extremidade. Os feixes comprimem e aquecem o alvo nas condições necessárias para que ocorra a fusão nuclear.</small>
+                </span>
 
                     <p class="container-para-img">FOTO DE LAWRENCE LIVERMORE NATIONAL LABORATORY</p>
-                </div>
-                <article class="container-artigo">
+            </div>
+            <article class="container-artigo">
                 <h2 class="container-artigo-titulo">
                         A faísca da fusão
-                    </h2>
-                <p class="container-artigo-para">Embora a fusão e a fissão nucleares extraiam energia do átomo, elas operam de maneira diferente. As usinas nucleares de hoje dependem da fissão nuclear, que libera energia quando se separam átomos grandes e pesados, como o urânio, devido à desintegração radioativa. Na fusão, no entanto, os átomos leves e pequenos, como o hidrogênio, fundem-se em outros maiores. No processo, eles liberam uma pequena parte de sua massa combinada como energia.
-
-                Em laboratórios, provocar a fusão dos núcleos de hidrogênio no hélio requer a criação e confinamento de um “plasma” – um gás eletricamente carregado, onde os elétrons não estão mais ligados aos núcleos atômicos – em temperaturas várias vezes mais altas do que o interior do Sol. Cientistas aprenderam décadas atrás como desencadear esse processo de forma explosiva dentro de bombas de hidrogênio, e os reatores de fusão de hoje podem fazer isso acontecer de forma controlada por instantes fugazes.
-                            
-                Desde o final dos anos 1950 e início dos anos 1960, os reatores de fusão compartilham um objetivo fundamental: criar um plasma o mais quente e denso possível e, em seguida, confinar esse material por tempo suficiente para que os núcleos dentro dele atinjam a ignição. O problema é que o plasma é incontrolável: ele é carregado eletricamente, o que significa que ele responde a campos magnéticos e gera o seu próprio campo à medida que se movimenta. Para suportar a fusão, ele precisa atingir temperaturas realmente impressionantes. No entanto, é tão difuso que esfria facilmente.
-                            
-                O físico Riccardo Betti, especialista em fusão nuclear a laser da Universidade de Rochester (Nova Iorque, EUA), compara o desafio da ignição por fusão à queima de gasolina em um motor. Uma pequena quantidade de gasolina se mistura com o ar e depois se inflama com uma faísca. A faísca não é grande, mas não precisa ser: basta acender uma pequena fração da mistura da gasolina com o ar. Se essa pequena fração se inflamar, a energia que ela libera é suficiente para incendiar o resto do combustível.
-                            
-                Em termos de energia liberada, as reações nucleares têm cerca de um milhão de vezes mais impacto do que as reações químicas – e são muito mais difíceis de acontecer. Experimentos de fusão anteriores podem ter alcançado as temperaturas certas, as pressões certas ou os tempos certos de confinamento de plasma para alcançar a ignição, mas não todos esses fatores de uma só vez. “Basicamente, a faísca foi gerada, mas não foi forte o suficiente”, explica Betti.</p>
-                </article>
-                <article class="container-artigo">
-                <h2 class="container-artigo-titulo">Uma pastilha de combustível</h2>
+                </h2>
                 <p class="container-artigo-para">
-                O método do NIF para produzir o combustível nuclear começa com uma pastilha do tamanho de um grão de pimenta, que contém uma mistura congelada de deutério e trítio, dois isótopos mais pesados de hidrogênio. Essa cápsula é colocada dentro de um cilindro de ouro aproximadamente do tamanho da borracha de um lápis, chamada hohlraum, que é montada em um braço no meio de uma grande câmara perfurada com laser.
+                    Embora a fusão e a fissão nucleares extraiam energia do átomo, elas operam de maneira diferente. As usinas nucleares de hoje dependem da fissão nuclear, que libera energia quando se separam átomos grandes e pesados, como o urânio, devido à desintegração radioativa. Na fusão, no entanto, os átomos leves e pequenos, como o hidrogênio, fundem-se em outros maiores. No processo, eles liberam uma pequena parte de sua massa combinada como energia.
 
-                Para desencadear a fusão, o NIF dispara 192 lasers de uma vez no hohlraum, que penetram através de dois orifícios. Os feixes, então, atingem a superfície interna do hohlraum, o que provoca que ele cuspa raios-x de alta energia que aquecem rapidamente as camadas externas da cápsula, e as queima e expulsa para fora. 
-
-                A parte interna dessa cápsula se comprime rapidamente quase cem vezes mais densa que o chumbo – o que força o deutério e o trítio dentro dela a atingirem as temperaturas e pressões necessárias para a fusão.
-
-                 Em 1997, a Academia Nacional de Ciências definiu o que significaria “ignição” para a instalação: quando a energia de fusão liberada supera a energia dos lasers. A instalação foi inaugurada em 2009, e atingir esse patamar acabou levando mais de uma década. Em agosto de 2021, o NIF relatou sua melhor execução experimental até aquele ponto: 1,32 megajoules de energia de fusão liberada para 1,92 megajoules de energia de laser inserida.
-
-                A corrida de 2021 sinalizou que a ignição poderia ser alcançada dentro do reator NIF. Para finalmente cruzar o limiar, os pesquisadores do NIF fizeram alguns pequenos ajustes, que incluíam operar com energias de laser ligeiramente mais altas. “Qualquer pequena mudança, feita da forma certa, terá mudanças significativas no resultado”, destaca Frenje.
+                    Em laboratórios, provocar a fusão dos núcleos de hidrogênio no hélio requer a criação e confinamento de um “plasma” – um gás eletricamente carregado, onde os elétrons não estão mais ligados aos núcleos atômicos – em temperaturas várias vezes mais altas do que o interior do Sol. Cientistas aprenderam décadas atrás como desencadear esse processo de forma explosiva dentro de bombas de hidrogênio, e os reatores de fusão de hoje podem fazer isso acontecer de forma controlada por instantes fugazes.
+                            
+                    Desde o final dos anos 1950 e início dos anos 1960, os reatores de fusão compartilham um objetivo fundamental: criar um plasma o mais quente e denso possível e, em seguida, confinar esse material por tempo suficiente para que os núcleos dentro dele atinjam a ignição. O problema é que o plasma é incontrolável: ele é carregado eletricamente, o que significa que ele responde a campos magnéticos e gera o seu próprio campo à medida que se movimenta. Para suportar a fusão, ele precisa atingir temperaturas realmente impressionantes. No entanto, é tão difuso que esfria facilmente.
+                            
+                    O físico Riccardo Betti, especialista em fusão nuclear a laser da Universidade de Rochester (Nova Iorque, EUA), compara o desafio da ignição por fusão à queima de gasolina em um motor. Uma pequena quantidade de gasolina se mistura com o ar e depois se inflama com uma faísca. A faísca não é grande, mas não precisa ser: basta acender uma pequena fração da mistura da gasolina com o ar. Se essa pequena fração se inflamar, a energia que ela libera é suficiente para incendiar o resto do combustível.
+                            
+                    Em termos de energia liberada, as reações nucleares têm cerca de um milhão de vezes mais impacto do que as reações químicas – e são muito mais difíceis de acontecer. Experimentos de fusão anteriores podem ter alcançado as temperaturas certas, as pressões certas ou os tempos certos de confinamento de plasma para alcançar a ignição, mas não todos esses fatores de uma só vez. “Basicamente, a faísca foi gerada, mas não foi forte o suficiente”, explica Betti.
                 </p>
-                </article>
-            </section>
-                
-            <aside class="container-aside" >
-                
+            </article>
+            <article class="container-artigo">
+                <h2 class="container-artigo-titulo">
+                    Uma pastilha de combustível
+                </h2>
+                <p class="container-artigo-para">
+                     O método do NIF para produzir o combustível nuclear começa com uma pastilha do tamanho de um grão de pimenta, que contém uma mistura congelada de deutério e trítio, dois isótopos mais pesados de hidrogênio. Essa cápsula é colocada dentro de um cilindro de ouro aproximadamente do tamanho da borracha de um lápis, chamada hohlraum, que é montada em um braço no meio de uma grande câmara perfurada com laser.
+
+                     Para desencadear a fusão, o NIF dispara 192 lasers de uma vez no hohlraum, que penetram através de dois orifícios. Os feixes, então, atingem a superfície interna do hohlraum, o que provoca que ele cuspa raios-x de alta energia que aquecem rapidamente as camadas externas da cápsula, e as queima e expulsa para fora. 
+
+                     A parte interna dessa cápsula se comprime rapidamente quase cem vezes mais densa que o chumbo – o que força o deutério e o trítio dentro dela a atingirem as temperaturas e pressões necessárias para a fusão.
+
+                     Em 1997, a Academia Nacional de Ciências definiu o que significaria “ignição” para a instalação: quando a energia de fusão liberada supera a energia dos lasers. A instalação foi inaugurada em 2009, e atingir esse patamar acabou levando mais de uma década. Em agosto de 2021, o NIF relatou sua melhor execução experimental até aquele ponto: 1,32 megajoules de energia de fusão liberada para 1,92 megajoules de energia de laser inserida.
+
+                     A corrida de 2021 sinalizou que a ignição poderia ser alcançada dentro do reator NIF. Para finalmente cruzar o limiar, os pesquisadores do NIF fizeram alguns pequenos ajustes, que incluíam operar com energias de laser ligeiramente mais altas. “Qualquer pequena mudança, feita da forma certa, terá mudanças significativas no resultado”, destaca Frenje.
+                </p>
+            </article>
+        </section>
+        <aside class="container-aside" >
                 <div class="container-aside-quiz-div">
-                  <a href="./quizPower/index.html"><img src="./img/logo.png" alt="logo com raio meio de um circulo azul"></a>
-                  <h3 class="container-aside-quiz-titulo"></h3>>Participe do Quiz <strong>P<small>OWER</small>-R<small>ENEW</small></strong></h3>
+                  <a href="./quizPower/index.html">
+                     <img src="./img/logo.png" alt="logo com raio meio de um circulo azul">
+                  </a>
+                  <h3 class="container-aside-quiz-titulo">Participe do Quiz <strong>P<small>OWER</small>-R<small>ENEW</small></strong></h3>
                 </div>
-                <div class="container-aside-quiz-div-seg"></div>>
-                  <h3 class="container-aside-quiz-titulo-seg"></h3>>Quiz <strong>P<small>OWER</small>-R<small>ENEW</small></strong></h3>
-                  <p class="container-aside-quiz-para"></p>>é um jogo ou desporto mental no qual os jogadores (individualmente ou em equipas) tentam responder corretamente a questões que lhes são colocadas. Em alguns contextos, a palavra também é utilizada como sinónimo de teste informal para a avaliação de aquisição de conhecimentos ou capacidades em ambientes de aprendizagem.</p>
-                </div>
-                <div class="container-aside-cadastro">
+            <div class="container-aside-quiz-div-seg">
+                  <h3 class="container-aside-quiz-titulo-seg">
+                     Quiz   <strong>P<small>OWER</small>-R<small>ENEW</small></strong>
+                  </h3>
+                  <p class="container-aside-quiz-para">
+                     é um jogo ou desporto mental no qual os jogadores (individualmente ou em equipas) tentam responder corretamente a questões que lhes são colocadas. Em alguns contextos, a palavra também é utilizada como sinónimo de teste informal para a avaliação de aquisição de conhecimentos ou capacidades em ambientes de aprendizagem.
+                 </p>
+            </div>
+            <div class="container-aside-cadastro">
                   <h3 lass="container-aside-cadastro-titulo">
                                 <a c href="./cadastro/index.html">Cadatre-se </a>
                   </h3>
                   <p lass="container-aside-cadastro-para">
                                 Através do cadastro você consegue participar rank dos participantes que mais está usando energia renovável
                     </p>
-                </div>
-            </aside>
-            <section class="container-nav">
+            /div>
+        </aside>
+        <section class="container-nav">
                 <div class="container-nav-p1">
                     <a class="container-nav-p1-link" href="./index.html"><img src="./img/Rectangle 2.png" alt="placas solares  "></a>
                     <p class="container-nav-p1-para">
-                        A <strong>energia solar</strong> é obtida por meio de placas solares, que captam a energia luminosa e a transformam em energia térmica ou elétrica. Os painéis solares captam a luz do sol e geram energia que é transportada até o inversor solar.
+                        A <strong>energia solar</strong> é obtida por meio de placas solares, que captam a energia luminosa e a transformam em energia térmica ou elétrica. 
                     </p>
                 </div>
                 <div class="container-nav-p3">
@@ -121,15 +164,21 @@
                  </p>
                 </div>
 
-            </section>
-    
+        </section>
+        
     </main>
     <footer id="final">
       <h3 class="final-titulo">Acesse  nossa  redes sociais :</h3>
       <ul class="final-lista">
-        <li>Fecebook</li>
-        <li>Instagra</li>
-        <li>LikedIn</li>
+        <li>Facebook  <img class="social" src="img/Social Icons (Community)/face.png" alt=""></li>
+            
+        <li>Instagra <img class="social" src="img/Social Icons (Community)/instagram.png" alt=""></li>
+        
+        <li>LinkedIn <img class="social" src="img/Social Icons (Community)/linkedIn.png" alt=""></li>
+        
+        <li>YouTube <img class="social" src="img/Social Icons (Community)/youtube.png" alt=""></li>
+        
+        <li>X (twitter) <img class="social" src="img/Social Icons (Community)/x.png" alt=""></li>
       </ul>
     </footer>
     

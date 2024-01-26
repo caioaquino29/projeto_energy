@@ -4,35 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energia Renovavel.com </title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,900;1,300&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icons.... -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
     <nav class="menu-navegar">
-        <img class="menu-navegar-img" src="./img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
-        <h2 class="menu-navegar-titulo">
-            Energia Renovave.com
-        </h2>
-        <ul class="menu-navegar-lista" type="none">
-            <li>Menu</li>
-            <li>Cadastro</li>
-            <li>Quiz</li>
-            <li>Mapa</li>
-            <li><button class="menu-navegar-lista-btn">Login</button> <img src="./img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
-        </ul>
-    </nav>
-    <main id="container">
-        <div class="container-div">
-            <h1 id="titulo">Entenda como ondas e marés podem gerar energia no Brasil</h1>
-            <img  class="container-img"src="./img/Usina-de-Ondas-Pecem.webp" alt="Projeto no Porto de Pecém instalou a primeira usina de ondas da América Latina ">
-
-
+        <div class="menu-navegar-div">
+            <img class="menu-navegar-img" src="./img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
+            <h2 class="menu-navegar-titulo">
+                Energia <br> Renovave.com
+            </h2>
+            <ul class="menu-navegar-lista " type="none">
+                <li>Menu</li>
+                <li>Cadastro</li>
+                <li>Quiz</li>
+                <li>Mapa</li>
+                <li class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> <img src="./img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
+            </ul>
+            <!-- menu huburguer fica escondido quando screen tamanho adequado para tela de computador já quando diminue o tamanho ele aparece e menu-nagar-lisata desaparece   -->
+            <span class="menu-secreto">
+                <button><i class="fa fa-bars"></i></button>
+                <span class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> </span>
+                
+            </span>
         </div>
+    </nav>
+    <!-- conteúdo principal  meu main..... -->
+    <main id="container">
+        <div class="container-div4">
+            <h1 id="titulo">Entenda como ondas e marés podem gerar energia no Brasil</h1>
+        </div>
+         <!-- minha sectio de texto e imagens  -->
         <section class="container-section">
             <p class="container-para">
               Os investimentos em fontes renováveis de energia, como a eólica e a solar, têm crescido cada vez mais em meio a preocupações com as mudanças climáticas e a contribuição dos combustíveis fósseis. Mas, além desses recursos ainda aproveitados principalmente na terra, o mundo começa a voltar os olhos para outra região com grande potencial energético: os oceanos.
             
               Uma região oceânica pode gerar energia de diversas formas, afirma Segen Estefen, professor de engenharia oceânica da UFRJ. É possível produzir energia a partir:
             </p>
-            <ul class="container-lista" type="square">
+            <ul class="container-lista-page4" type="square">
               <li>Do movimento das ondas</li>
               <li>Pela variação de temperatura entrea superfície e o fundo do mar</li> 
               <li>Pelas correntes oceânicas</li>
@@ -80,6 +102,7 @@
             </p>
        
         </section >
+        <!-- Assuntos  corelacionado com materia principal informação lateral..... -->
         <aside aside class="container-aside">
     
             <div class="container-aside-quiz-div">
@@ -103,6 +126,7 @@
                 </p>
             </div>
         </aside>
+        <!-- Barra no meio pagina para dá acesso outros assuntos do site  -->
         <section class="container-nav">
             <div class="container-nav-p1">
             <a class="container-nav-p1-link" href="./index.html">
@@ -140,12 +164,19 @@
             </div>
         </section>
     </main>
+    <!-- rodapé da pagina com rede sociais principais  -->
     <footer id="final">
         <h3 class="final-titulo">Acesse  nossa  redes sociais :</h3>
         <ul class="final-lista">
-            <li>Fecebook</li>
-            <li>Instagra</li>
-            <li>LikedIn</li>
+            <li>Facebook  <img class="social" src="img/Social Icons (Community)/face.png" alt=""></li>
+            
+            <li>Instagra <img class="social" src="img/Social Icons (Community)/instagram.png" alt=""></li>
+            
+            <li>LinkedIn <img class="social" src="img/Social Icons (Community)/linkedIn.png" alt=""></li>
+            
+            <li>YouTube <img class="social" src="img/Social Icons (Community)/youtube.png" alt=""></li>
+            
+            <li>X (twitter) <img class="social" src="img/Social Icons (Community)/x.png" alt=""></li>
         </ul>
     </footer>
     
