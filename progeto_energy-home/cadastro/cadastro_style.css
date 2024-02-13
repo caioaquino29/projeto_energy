@@ -1,0 +1,117 @@
+
+
+#container-section-cadastrar{
+    max-width: 650px ;
+    background-color:rgba(167, 165, 165, 0.661);
+    padding: 35px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.225) ;
+    border-radius: 20px 20px 20px 20px ;
+    margin: 65px 0px;
+    
+   
+}
+ .form-part1,.form-part2,.form-part3{
+    margin-bottom:20px ;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.201);
+    
+}
+
+
+input{
+     background-color: var(--cor8);
+     border-radius: 6px ;
+     height: 22px ;
+     
+     
+}
+
+#input-nome,#input-endereco,#input-email {
+    width: 57% ;
+
+}
+
+label{
+    position: relative;
+    margin-bottom:.2rem ;
+    
+}
+label:not(:first-of-type){
+    margin-top: 1rem;
+  }
+
+
+
+/* ---------- Estilos dinâmicos ---------- */
+
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top:-22px;
+    right:-105px;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+
+  .helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+  }
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }
+
+  .ivisible{
+    display: none;
+  }
+  .divBox{
+    margin: 50px  auto; 
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    height:150px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px #20202028 ;
+  }
+  .divBox > p > small{
+    color: #202020ae;
+    font-style: italic;
+  }
+  .btn-home {
+    font-family: var(--font3);
+    border-radius: 5px;
+   background-color:#7aefef; 
+   font-weight:bolder ;
+   padding: 3px 10px;
+   border:2px solid #0D0D0D;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.313) ;
+    font-size: 1rem;
+  }
+  .btn-home:hover{
+    transition: .4s;
+    color: white;
+    background-color:#3dbdbd ;
+  }
+  
+/* ---------------------------------------- */
