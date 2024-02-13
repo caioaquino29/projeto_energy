@@ -151,7 +151,7 @@ userTelInput.addEventListener("change", (e) => {
     let valor = e.target.value
     
 
-    if(valor.length < 11 || valor.length > 14 ){
+    if(valor.length < 11 || valor.length > 14 || valor.includes('()') ){
         // verifica se no campo input foi preechido com mais que 14 ou menor que 11 caracteres 
         userTelHelper.innerText = '* Telefone invalido! só os números celular é acetavel';
     etilizarInputIncoorreto(userTelInput,userTelHelper) 
@@ -160,7 +160,7 @@ userTelInput.addEventListener("change", (e) => {
     etilizarInputCorreto(userTelInput,userTelHelper)
       formularioPrenchido.telefone = true;
 }
-
+ 
 });
 
 

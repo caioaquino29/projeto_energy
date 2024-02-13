@@ -7,6 +7,7 @@
     <title>Energia Renovavel.com </title>
     <!-- link CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style-quiz.css">
     <!-- link font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- icons.... -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- javaScript interação do site quiz  -->
+    <script src="js/script.js" type="module" defer></script>
+   
 </head>
 <body>
     <!-- menu de navegação e interação -->
@@ -46,35 +51,26 @@
   </nav>
   <!-- parte do menu da pagina  quiz  -->
   <div class="menu-quiz">
-    <div class="menu-quiz-box3">
-        <img class="img1" src="../img/logo.png" alt="logo um raio meio de um circulo">
-        <p class="para-quiz"> 
-          <strong class="str-quiz" >Questão <spa class="interação">1</spa> Power-Renew: </strong><br>
-          As fontes de energia podem ser classificadas, conforme a sua origem, em renováveis e não renováveis. As fontes renováveis de energia têm como principal característica a:
-        </p>
-    </div>
+      <div class="menu-quiz-box3">
+          <img class="img1" src="../img/logo.png" alt="logo um raio meio de um circulo">
+          <div class="box-interativo">
+             <span class="interação"></span>
+             <p class="para-quiz"></p> 
+             
+          </div>
+        </div>
    </div>
-    <main id="container-quiz">
+   <main id="container-quiz">
         <section class="container-section-quiz2"> 
-            <di class="container-div-quiz2" >
-                <ol class="lista-odernada-quiz" type="A">
-                   <li>
-                     <button onclick="alert('Você errou tente novamente !!!!!!')" >Necessidade de baixos investimentos financeiros para produção elétrica.</button>
-                  </li><br><br>
-                  <li>
-                     <button onclick="alert('Você errou tente novamente !!!!!!')">Utilização de elementos ambientais finitos para a produção energética.</button>
-                  </li><br><br>  
-                  <li>
-                     <button onclick="alert('Você errou tente novamente !!!!!!')">Dependência da utilização de combustíveis fósseis para a sua produção.</button>
-                  </li> <br><br>
-                  <li>
-                     <button onclick="alert('Você errou tente novamente !!!!!!')">Missão de poluentes atmosféricos causadores do aquecimento global.</button>
-                  </li> <br><br> 
-                  <li>
-                    <button onclick="alert('Acertou parabéns!!!!!!')">Utilização de recursos naturais que possuem capacidade de regeneração</button>
-                </li> 
-                </ol>
-
+            <div class="container-div-quiz2" >
+                <div id="popup" class="">
+                </div>
+                <span class="questoes"></span>
+                <span class="respostas"></span>
+            </div>
+            <div class="final">
+                <span></span>
+                <button><i class="fa fa-redo"></i>Reniciar</button>
             </div>
         </section>
         <div class="container-div-quiz">

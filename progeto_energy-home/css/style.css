@@ -44,22 +44,7 @@ body{
     background-image: linear-gradient(180deg,var(--cor0) ,#7aefeffb  );
 }
 /* menu do quiz que diferente da paginas corretes  */
-.menu-quiz{
-   
-    width:100vw;
-    display: flex;
-    justify-content: end;
-    background-image: url("../img/imgAiRosa.jpeg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-size:cover ;
-    padding-left: 50px;
-    padding-top: 67px;
-    color: var(--cor8);
-    font-size: 1.4rem;
-    height: 400px;
 
-}
 .menu-cadastrar{
     width:100vw;
     display: flex;
@@ -81,113 +66,11 @@ body{
     border-radius: 20px;
 }
 
-@media (min-width:491px) {
-    .menu-quiz-box-secreto, .img2{
-        display: none;
-    }
-    
-}
-
-@media (max-width:490px) {
-    .menu-quiz {flex-direction: column;
-    
-
-}   .menu-quiz-box1{
-    font-size: 1rem;
-}
-   .menu-quiz-box2{
-   display: none;
-   
-}  .menu-quiz-box-secreto{
-    display: block;
-}
-
-}
-.menu-quiz-box1{
-    margin: 0 auto;
-    color: #fffffe;
-    background-color: #0d0d0d0b;
-  
-   padding: 0px ;
-   border-radius: 20px 0 0 20px;
-}
-.menu-quiz-box2{
-    
-    width: 350px;
-    height: 250px ;
-    background-color: #8EBF45;
-    padding:25px 50px  ;
-    border-radius: 30px 0px 0px 30px ;
-}
-.str-quiz{
-    font-family: var(--font3);
-    background-color: #F2A81D;
-    color: var(--cor8);
-    padding: 0px 5px ;
-    border-radius: 20px;
-    box-shadow:5px 5px 10px  #0d0d0d45;
-    
-}
-.menu-quiz-box3{
-    display: flex;
-    column-gap: 30px ;
-    width: 80vw;
-    margin-bottom: 100px;
-    background-color: #8EBF45;
-    padding:25px 50px  ;
-    border-radius: 30px 0px 0px 30px ;
-}
-@media (max-width:856px) {
-
-   .para-quiz{font-size: 1rem;
-    
-   }.menu-quiz-box3{
-    
-    height: 250px;
-   }.img1{
-    width: 100px;
-    height: 100px;
-    border-radius:100px ;
-    box-shadow:5px 5px 10px  #0d0d0d43;
-   }
-    
-}
-@media (max-width:505px) {
-    .img1{
-        display: none;
-    }.menu-quiz-box3{
-        height: 300px;
-        padding: 15px;
-        margin-left: 15px ;
-        margin-bottom: 50px;
-    }
-    
-}
-.img1{
-    border-radius:200px ;
-    box-shadow:5px 5px 10px  #0d0d0d43;
-
-}
 
 
-.menu-quiz-box-secreto{
-    
-    width: 50vw;
-    height: 30vh;
-    background-color: #8EBF45;
-    padding:25px 50px  ;
-    border-radius: 30px 30px 0px 0px ;
-}
-.img2{
-    width: 50vw;
-    border-radius:200px ;
-    box-shadow:5px 5px 10px  #0d0d0d45;
-}
-.menu-quiz-box2 >img{
-    border-radius:200px ;
-    box-shadow:5px 5px 10px  #0d0d0d45;
-    
-}
+
+
+
 
 /* finaliza parte quiz....... */
 
@@ -497,59 +380,6 @@ body{
 
 
 /* quiz...... */
-.container-section-quiz{
-    max-width: 650px ;
-    background-color: white;
-    padding: 35px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.033) ;
-    border-radius: 0 0 20px 20px ;
-    margin-bottom: 50px ;
-   
-}
-.container-section-quiz2{
-    margin-top: 60px;
-    padding: 100px;
-    background-image: linear-gradient(180deg,var(--cor0) ,hsla(180, 79%, 71%, 0.984),#7aefef7e, #7aefef2f ,#7aefef20 );
-    border-radius: 20px 20px 0px 0px ;
-
-}
-@media (max-width:500px) {
-    .container-section-quiz2{
-        padding: 50px;
-    }
-    
-}
-.cadastrar-div{
-    margin: 50px;
-
-}
-
-
-.lista-odernada-quiz> li > button{
-    border: none;
-    color:var(--cor10);
-    font-weight: 900;
-    background-color: rgba(255, 254, 254, 0.354);
-    font-family: var(--font2);
-
-}
-#titulo-quiz{
-    color: #05F5A3;
-    margin: 50px;
-    
-
-}
-
-.container-div-quiz{
-    margin-bottom: 60px;
-    width: 100vw;
-    height: 35px;
-    display: flex;
-    justify-content:space-around;
-
-    
-
-}
 
 
 i{
