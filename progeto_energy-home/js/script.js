@@ -1,28 +1,32 @@
-// menu tamanho pc..........
+// menu do site 
 const menuLista = document.getElementById("menu-lista");
-const cadastroLista = document.querySelector("#cadastro-lista");
-const quizLista = document.querySelector("#quiz-lista");
-const mapaLista = document.querySelector("mapa-lista");
 const btnLogin = document.querySelector('.menu-navegar-lista-btn')
 const containerUl = document.querySelector('.menu-navegar-lista')
 const containerLogin = document.querySelector('#container-logar')
 const menuDiv =document.querySelector('.menu-navegar-div')
 const spanSec =document.querySelector('#li-btn')
 
+//  opção menu com as opções de navegação nas paginas do site
+
 menuLista.addEventListener('click',()=>{
     menuLista.classList.toggle('change')
     document.getElementById("nav").classList.toggle("change");
+    // Abre um menu ao clicar na opção  
  
 })
+
+// forma de acessar links do site para navegar 
 containerUl.addEventListener('click', (e)=>{
     let chave = e.target.id
     openLink(chave)
 }
 )
+
+// botão login abre popup para entra na area restrita do site 
 menuDiv.addEventListener('click',(e)=>{
     let chave_1 = e.target.id
-    console.log(chave_1)
-    
+   
+    // cria janela popup para fazer login
     if(chave_1 =='porta_1'|| chave_1=='porta_2'){
       const janelaFlutuante = document.createElement('div');
             janelaFlutuante.id = 'popup'
@@ -49,6 +53,7 @@ menuDiv.addEventListener('click',(e)=>{
 
 
             botaoLogin();
+            // os botõe de navegação do popup para logar se cadastrar ou fechar popup 
 
             function botaoLogin(){
             const btnLogar = document.querySelector('.btn-logar')
@@ -77,31 +82,19 @@ menuDiv.addEventListener('click',(e)=>{
               
     }
 
-          
-    
-    
-    
-    
-    
-    
-    
-    
-    // let chave = e.target.className
-    // console.log(chave)
-    // openLink(chave)
-
-
-
-
-
 }})
+
+// menu humburg abre um menu de lista para as opções de navegação do site em tela pequenas 
 function menuOnClick() {
+    // para deixar mais dinamicos foi adcinadoas varias class para estilizar animação do site 
 
     spanSec.style.display='none'
     document.getElementById("menu-bar-sec").classList.toggle("change");
     document.getElementById("nav-sec").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
   }
+
+//  serve para abrir varios links do site para navegação do mesmo 
 
 function openLink(chave){
     ;

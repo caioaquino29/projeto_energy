@@ -1,8 +1,16 @@
-export default [
+// É um objeto/jason para mudar as questõe  de sustentabilidade 
+
+export default [  
+  // é uma funcionalidade do JavaScript que permite exportar 
     {
+      // questoes são as peguntas do quiz 
       questoes: " As fontes de energia podem ser classificadas, conforme a sua origem, em renováveis e não renováveis. As fontes renováveis de energia têm como principal característica a: ",
       respostas: [
-        { alternativa: "A) - Utilização de recursos naturais que possuem capacidade de regeneração", correct: true },
+        // respostas são as alternativa e estão em um array 
+        { alternativa: "A) - Utilização de recursos naturais que possuem capacidade de regeneração",
+        // as aternativas são alternativas 
+        correct: true },
+        // o Correct são especie de variavel com valor boolean true e false para saber se altenativa escolhida está certa ou não
         { alternativa: "B) -  Dependência da utilização de combustíveis fósseis para a sua produção.", correct: false },
         { alternativa: "C) -  Necessidade de baixos investimentos financeiros para produção elétrica.", correct: false },
       ],

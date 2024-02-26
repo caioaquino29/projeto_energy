@@ -27,7 +27,7 @@
     --cor11:#0D0D0D;
 }
         body{
-            padding: 50px;
+            padding: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -36,7 +36,7 @@
             font-weight: lighter;
         }
         .container{
-            background-color:var(--cor9);
+            background-color:aliceblue;
             border-radius: 10px ;
             box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.276);
             display: flex;
@@ -65,7 +65,7 @@
             justify-content: center;
             column-gap: 18px;
             align-items: center;
-            background-color:#330A0A;
+            background-color:#F2A81D;
             color: white;
             width: 500px;
             padding: 25px;
@@ -82,11 +82,24 @@
 
 
         }
+
+       
         form{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
            
+        }
+        img{
+            width: 50px;
+        }
+        .head{
+            font-size: 1.5em;
+            width: 480px;
+            border-bottom:3px solid #05A9F5;
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
         }
 
     
@@ -94,7 +107,11 @@
 </head>
 <body>
     <div class="container">
-        <h2>Login</h2>
+        <div class="head">
+            <span><img src="img/logo.png" alt=""></span>
+            <h2>Login</h2>
+        </div>
+        
         <form action="">
             <label for="Email">Seu Email</label>
             <input type="text">
