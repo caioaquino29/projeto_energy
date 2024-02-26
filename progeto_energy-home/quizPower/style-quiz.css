@@ -12,7 +12,7 @@
     padding-top: 67px;
     color: var(--cor8);
     font-size: 1.4rem;
-    height: 400px;
+    height: 360px;
 
 }
 
@@ -134,8 +134,10 @@
    
 }
 .container-section-quiz2{
-    margin-top: 60px;
-    padding: 100px;
+    margin-top: 30px;
+    padding: 50px;
+    width: 500px;
+    height: 300px;
     background-image: linear-gradient(180deg,var(--cor0) ,hsla(180, 79%, 71%, 0.984),#7aefef7e, #7aefef2f ,#7aefef20 );
     border-radius: 20px 20px 0px 0px ;
 
@@ -223,10 +225,11 @@
 .final{
     flex-direction: column;
     align-items: center;
+    row-gap: 50px;
     justify-content: space-around;
 }
 
-.final > button{
+.reniciar{
     margin: auto;
     font-family: var(--font3);
     border-radius: 5px;
@@ -239,7 +242,7 @@
 
 }
 
-.final > button:hover{
+.reniciar :hover{
     transition: .4s;
     color: white;
     background-color: var(--cor3);
@@ -260,3 +263,61 @@
     background-color:var(--cor5);
 
 
+}
+.inicial{
+    margin: auto;
+    font-family: var(--font3);
+    border-radius: 5px;
+   background-color:#F2A81D;
+   font-weight:bolder ;
+   padding: 3px 10px;
+   border:2px solid #0D0D0D;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.313) ;
+
+
+}
+.inicial:hover{
+    transition: .4s;
+    color: white;
+    background-color: var(--cor5);
+}
+.proximo{
+   margin: auto;
+   font-family: var(--font3);
+   border-radius: 5px;
+   background-color:#8EBF45;
+   font-weight:bolder ;
+   padding: 3px 10px;
+   border:2px solid #0D0D0D;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.313) ;
+
+
+}
+.proximo:hover{
+    transition: .4s;
+    color: white;
+    background-color: green;
+}
+
+#janela-flutuante{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 10px;
+    
+
+    text-align: center;
+    position: fixed;
+    background-color: #F2A81D;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.ivisivel{
+    display: none;
+}

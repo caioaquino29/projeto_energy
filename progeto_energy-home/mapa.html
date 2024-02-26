@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    img{
+        width: 100vw;
+
+       
+    }
+    .mapa-size{
+        width: 700px ;
+    height: 700px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/mapa.png" alt="mapa do  Barsil energia">
+    </div>
+
+    <script>
+        let mapa  = document.querySelector('img');
+            mapa.addEventListener('dblclick', ()=>{
+
+                mapa.classList.toggle('mapa-size')
+            })
+    </script>
+    
+</body>
+</html>

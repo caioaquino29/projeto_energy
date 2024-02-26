@@ -19,46 +19,104 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- icons.... -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Javascript  -->
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
    <!-- menu de navegação e interação -->
    <nav class="menu-navegar">
-    
-      <div class="menu-navegar-div">
+    <div class="menu-navegar-div">
         <img class="menu-navegar-img" src="../img/Group 1.png" alt="Lâmpada com folha verde dentro  ">
         <h2 class="menu-navegar-titulo">
             Energia <br> Renovave.com
         </h2>
         <ul class="menu-navegar-lista " type="none">
-            <li>Menu</li>
-            <li>Cadastro</li>
-            <li>Quiz</li>
-            <li>Mapa</li>
-            <li class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> <img src="../img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo"></li>
+            <li id="menu-lista" class="menu-bar"  >
+                Menu
+                <nav class="nav" id="nav">
+                    <ul>
+                      <li><a href="page2.html">Energia sustentável</a></li>
+                      <li><a href="page3.html">Energia eólica</a></li>
+                      <li><a href="page4.html">Energia do mar</a></li>
+                      <li><a href="page5.html">Energia hidrelétrica</a></li>
+                    </ul>
+                  </nav>
+                  
+                      
+            </li>
+            <li id="cadastro-lista">Cadastro</li>
+            <li id="quiz-lista">Quiz</li>
+            <li id="mapa-lista">Mapa
+
+            </li>
+            <li id="li-btn">
+                <button  id="porta_1" class="menu-navegar-lista-btn">
+                    Login
+                    <img class="img-login" src="../img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo">
+                </button> 
+            </li>
         </ul>
+    
         <!-- menu huburguer fica escondido quando screen tamanho adequado para tela de computador já quando diminue o tamanho ele aparece e menu-nagar-lisata desaparece   -->
         <span class="menu-secreto">
-            <button><i class="fa fa-bars"></i></button>
-            <span class="li-btn"><button class="menu-navegar-lista-btn"><i class="fa fa-sign-in">Login</i></button> </span>
+            <div id="menu-sec">
+                <div id="menu-bar-sec" onclick="menuOnClick()">
+                  <div id="bar1" class="bar-sec"></div>
+                  <div id="bar2" class="bar-sec"></div>
+                  <div id="bar3" class="bar-sec"></div>
+                </div>
+                <nav class="nav-sec" id="nav-sec">
+                  <ul>
+                    <li>
+                        <a href="page2.html">Energia sustentável</a>
+                    </li>
+                      <li>
+                        <a href="page3.html">Energia eólica</a>
+                    </li>
+                      <li>
+                        <a href="page4.html">Energia do mar</a>
+                    </li>
+                      <li>
+                        <a href="page5.html">Energia hidrelétrica</a>
+                    </li>
+                    <li>
+                        <a href="cadastro/index.html">Castrar-se</a>
+                    </li>
+                    <li>
+                        <a href="quizPower/index.html">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="mapa.html">Mapa</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                      
+                      
+                  </ul>
+                </nav> 
+              </div>
+              
+              <div class="menu-bg" id="menu-bg"></div>
+
+
+
+            <!-- <span id="li-btn">'
+                <button id="porta_2" class="menu-navegar-lista-btn">
+                    Login
+                    <img class="img-login" src="./img/🦆 icon _Person Circle_.png" alt="um cilueta de uma pessoa no circulo">
+
+                </button> 
+            </span>
             
-        </span>
-      </div>
-    </nav>
-    <!-- parte do menu da pagina  quiz  -->
-    <div class="menu-quiz">
-        <div class="menu-quiz-box1">
-            <h1>Quiz Power-renew!! </h1>
-            <h3>Teste seu conhecimentos em <br> energia renoavavel</h3>
-        </div>
-        <div class="menu-quiz-box2">
-            <img src="../img/logo.png" alt="Circulo com raio no meio">
-        </div>
-        <div class="menu-quiz-box-secreto">
-            <img class="img2" src="../img/logo.png" alt="Circulo com raio no meio">
-        </div>
+        </span> -->
     </div>
+</nav>
+<div id="container-logar">
+
 </div>
 <!-- conteúdo principal  meu main..... -->
+    
     <main id="container-quiz">
         <section class="container-section-quiz">
             <h2 id="titulo-quiz">Algumas informações sobre Quiz Power-renew!!</h2>
@@ -76,13 +134,13 @@
                 <br>
             </ul>
         </section>
-        <div class= "container-div-quiz">
-            <button class="btn-quiz-sair" onclick="window.open('../page2.html')">
-                Sair<i class="fa fa-sign-out"></i>
+        <div  class= "container-div-quiz">
+            <button id="voltar" class="btn-quiz-voltar">
+                Voltar
             </button>
 
-            <button class="btn-quiz-entrar"  onclick="window.open('./quiz.html')">
-                Start Quiz <i class="fa fa-sign-in"></i>
+            <button class="btn-quiz-entrar"  >
+                Iniciar Quiz 
             </button>
         </div>
 
@@ -103,6 +161,57 @@
             <li>X (twitter) <img class="social" src="img/Social Icons (Community)/x.png" alt=""></li>
         </ul>
     </footer>
+    <script>
+
+
+
+        const btnQuizEntrar = document.querySelector('.btn-quiz-entrar')
+        const mainQuiz = document.querySelector('main')
+        const btnVoltar = document.querySelector('#voltar')
+
+        btnVoltar.onclick = () =>{
+            window.open('../index.html')
+        }
+        
+        btnQuizEntrar.addEventListener('click',()=>{
+            const janelaFlutuante = document.createElement('div');
+            janelaFlutuante.id = 'janela-flutuante'
+            janelaFlutuante.innerHTML = ` 
+            <p>Está pronto para dá inicio <br> ao Quiz Power-renew!! </p> <button id="entrar" class="btn-quiz-entrar 2"  >
+              <i class="fa fa-sign-in"  ></i> Continuar Start Quiz 
+            </button>
+            <button id="sair" class="btn-quiz-sair">
+               <i class="fa fa-sign-out"></i> Sair
+            </button>`
+            mainQuiz.appendChild(janelaFlutuante)
+           
+            botao();
+
+            function botao(){
+            const btnQuizEntrar2 = document.querySelector('#entrar')
+            const btnQuizSair = document.querySelector('#sair')
+            
+            
+            btnQuizEntrar2.onclick = () => {
+                window.location.href = './quiz.html' 
+
+            }
+            btnQuizSair.onclick = () =>{
+                janelaFlutuante.style.display = 'none'
+                reaver()
+
+            }
+        }
+             
+
+
+        })
+        function reaver(){
+            window.location.reload()
+            
+        }
+     
+    </script>
     
 </body>
 </html>
