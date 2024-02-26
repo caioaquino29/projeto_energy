@@ -95,8 +95,11 @@
         margin-left: 15px ;
         margin-bottom: 50px;
     }
+
     
 }
+
+
 .img1{
     border-radius:200px ;
     box-shadow:5px 5px 10px  #0d0d0d43;
@@ -148,6 +151,13 @@
     }
     
 }
+@media (max-width:400px) {
+    .container-section-quiz2{
+        width: 280px;
+        height: 450px;
+    }
+    
+}
 .cadastrar-div{
     margin: 50px;
 
@@ -196,11 +206,11 @@
 /* Estilos para o pop-up */
 #popup {
     display: none;
-
     text-align: center;
     position: fixed;
     top: 50%;
     left: 50%;
+    width: 250px;
     transform: translate(-50%, -50%);
     padding: 20px;
     border: 1px solid #ccc;
